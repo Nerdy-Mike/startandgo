@@ -1,0 +1,67 @@
+{
+  "Index": {
+    "title": "Hello world!"
+  },
+  "Header": {
+    "history": "History",
+    "values": "Values",
+    "competences": "Competences",
+    "carrers": "Carrers",
+    "portfolio": "Portfolio",
+    "contact-us": "Contact Us"
+  },
+  "MainPage": {
+    "main_banner": {
+      "title": "Your Challenges Are Our Challenges",
+      "description": "Give more value to your technical objectives",
+      "button": "Contact Us"
+    },
+    "main_client": {
+      "title": "Our Main Clients",
+      "description": "Involved with professionalism, charmed by lines of coding"
+    },
+    "proposal_values": {
+      "analysis": {
+        "title": "Analysis and re-engineering of business processes",
+        "description": "We work side by side with the Customer to identify business processes, design the best solution and implement it, supporting the digital transformation of companies."
+      },
+      "development": {
+        "title": "Custom development",
+        "description": "We develop applications on customer request, reducing the needs in applications with high technological value."
+      },
+      "re-engineering": {
+        "title": "Analysis and re-engineering of business processes",
+        "description": "We work side by side with the Customer to identify business processes, design the best solution and implement it, supporting the digital transformation of companies."
+      }
+    },
+    "our_journey": {
+      "title": "Our journey so far in numbers",
+      "know_tech": 20,
+      "projects": 50,
+      "drunk_coffee": 999
+    },
+    "our_portfolio": {
+      "title": "Our Portfolio",
+      "description": "Cras imperdiet est eget nulla fringilla, sit amet volutpat sem tristique. Pellentesque quis augue ac mauris posuere vehicula.",
+      "button": "View all portfolio"
+    },
+    "cta_section": {
+      "title": "Have you got a tech challenge?",
+      "button": "Contact Us"
+    }
+  },
+  "Footer": {
+    "sologan": "The passion for technology makes us the best partner for your technological high value challenges",
+    "company": {
+      "history": "History",
+      "values": "Values",
+      "competences": "Competences",
+      "carrers": "Carrers",
+      "portfolio": "Portfolio"
+    },
+    "contact": {
+      "phone": "+39 0577 318 241",
+      "address": "Viale Sardegna 14, 53100 Siena (SI)"
+    }
+  }
+}
