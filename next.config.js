@@ -6,6 +6,16 @@ const withMDX = require("@next/mdx")({
 
 const nextConfig = {
   pageExtensions: ["js", "jsx", "ts", "tsx", "md", "mdx"],
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
+        port: "",
+        pathname: "**",
+      },
+    ],
+  },
 };
 
 module.exports = withNextIntl(withMDX(nextConfig));

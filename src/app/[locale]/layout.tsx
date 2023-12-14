@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Lexend } from "next/font/google";
 import { notFound } from "next/navigation";
 import { unstable_setRequestLocale } from "next-intl/server";
 
@@ -9,7 +9,7 @@ import { locales } from "@/constants/locales";
 
 import "../global.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Lexend({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -27,9 +27,8 @@ export default function RootLayout({
   if (!locales.includes(locale as any)) notFound();
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.className} pt-20`}>
         <Header />
-
         {children}
       </body>
     </html>
