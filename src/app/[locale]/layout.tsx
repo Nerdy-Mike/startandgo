@@ -5,7 +5,7 @@ import { unstable_setRequestLocale } from "next-intl/server";
 
 import Header from "@/components/Header/Header";
 
-import { locales } from "@/constant/locales";
+import { locales } from "@/constants/locales";
 
 import "../global.css";
 
