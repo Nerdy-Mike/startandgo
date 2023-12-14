@@ -1,13 +1,13 @@
 import clsx from "clsx";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { useTranslations } from "next-intl";
 
-import { NavMobile } from "./NavMobile";
+import NavMobileWrapper from "./NavMobileWrapper";
 import { LanguageSelector } from "../Buttons/LanguageSelector";
+import HeaderItem from "./HeaderItems";
 
-const NavItems = [
+export const NAV_ITEMS = [
   "history",
   "values",
   "competences",
@@ -38,21 +38,15 @@ const Header = () => {
         </div>
         <nav>
           <ul className="flex space-x-6 flex-row justify-between items-center">
-            {NavItems.map((item) => (
-              <li key={item}>
-                <Link
-                  href={`/${item}`}
-                  className={clsx("text-base font-normal text-white")}
-                >
-                  {t(item)}
-                </Link>
-              </li>
-            ))}
+            {NAV_ITEMS.map((item) => {
+              const itemName = t(item);
+              return <HeaderItem key={item} name={item} translate={itemName} />;
+            })}
           </ul>
         </nav>
         <LanguageSelector />
       </div>
-      <NavMobile />
+      <NavMobileWrapper />
     </header>
   );
 };

@@ -1,26 +1,29 @@
 "use client";
-import React, { FC, useRef, useState } from "react";
+import React, { FC } from "react";
 
-import { useRouter, usePathname } from "next/navigation";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 import clsx from "clsx";
 
+import { defaultLocale } from "@/constants/locales";
+import { Language } from "@/types/lang";
+
 interface IHeaderItemProps {
-  translate: (key: string) => string;
+  translate: string;
   name: string;
 }
 
 const HeaderItem: FC<IHeaderItemProps> = ({ translate, name }) => {
-  const router = useRouter();
   const pathname = usePathname();
+  const path = (pathname.split("/")[1] as Language) ?? defaultLocale;
 
   return (
     <li key={name}>
       <Link
-        href={`/${name}`}
+        href={`/${path}/${name}`}
         className={clsx("text-base font-normal text-white")}
       >
-        {translate(name)}
+        {translate}
       </Link>
     </li>
   );
