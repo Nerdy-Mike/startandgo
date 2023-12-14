@@ -17,13 +17,12 @@ interface INavMobileProps {
 const NavMobile: FC<INavMobileProps> = ({ navItems }) => {
   const [isOpen, setOpen] = useState(false);
 
-  const router = usePathname();
   const pathname = usePathname();
   const path = (pathname.split("/")[1] as Language) ?? defaultLocale;
 
   useEffect(() => {
     setOpen(false);
-  }, [router]);
+  }, [pathname]);
 
   const handleClose = () => {
     setOpen(false);
