@@ -55,21 +55,21 @@ export const NavMobile = () => {
           <Link href="/" onClick={handleClose} className="">
             {isOpen ? (
               <Image
-                src="/assets/images/logos/logo-zoodoo-white.png"
+                src="/assets/logo/Logo.svg"
                 alt="ZooDoo logo"
                 width={100}
                 height={100}
               />
             ) : shouldShowTransparent ? (
               <Image
-                src="/assets/images/logos/logo-zoodoo-white.png"
+                src="/assets/logo/Logo.svg"
                 alt="ZooDoo logo"
                 width={100}
                 height={100}
               />
             ) : (
               <Image
-                src="/assets/images/logos/logo-zoodoo-green.png"
+                src="/assets/logo/Logo.svg"
                 alt="ZooDoo logo"
                 width={100}
                 height={100}
