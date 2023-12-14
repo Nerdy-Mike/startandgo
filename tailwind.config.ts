@@ -18,6 +18,8 @@ const config: Config = {
       accent: {
         default: "#0B63E5",
       },
+      white: "#FFFFFF",
+      black: "#000000",
       gray: {
         50: "#F5F6F7",
         100: "#E6E8EC",

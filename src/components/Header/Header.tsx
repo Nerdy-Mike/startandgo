@@ -5,17 +5,19 @@ import { usePathname } from "next/navigation";
 import { useTranslations } from "next-intl";
 
 import { NavMobile } from "./NavMobile";
+import { LanguageSelector } from "../Buttons/LanguageSelector";
+
+const NavItems = [
+  "history",
+  "values",
+  "competences",
+  "carrers",
+  "portfolio",
+  "contact-us",
+];
 
 const Header = () => {
   const t = useTranslations("Header");
-  const NavItems = [
-    "history",
-    "values",
-    "competences",
-    "carrers",
-    "portfolio",
-    "contact-us",
-  ];
 
   return (
     <header
@@ -48,7 +50,7 @@ const Header = () => {
             ))}
           </ul>
         </nav>
-        <div>Change language</div>
+        <LanguageSelector />
       </div>
       <NavMobile />
     </header>
